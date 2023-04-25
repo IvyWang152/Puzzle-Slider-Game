@@ -1,0 +1,15 @@
+luigi: ivvy: 2
+yoshi: ibb: 5
+luigi: zhen: 6
+fifteen: immm: 10
+luigi: ibbb: 4
+luigi: ivy wang: 2
+luigi: ivvv: 2
+yoshi: ivvv: 8
+yoshi: ivv: 3
+yoshi: ivv: 2
+yoshi: ivy wang: 2
+yoshi: ivv: 1
+mario: ivy: 18
+yoshi: ivy: 3
+yoshi: ivy: 4
