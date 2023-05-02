@@ -13,8 +13,7 @@ The key to make the game alive is to update all information after every valid cl
 ----Solvability Analysis:----
 puzzle_solver.py: A * algorithm is implemented to find a shortest path from the initial game state to the goal state. 
 
-inversion_count.py: inversion count, combined with merge sort was used to check whether  a puzzle is solvable or not.
-(Because I haven't mastered recursive function, so the code in this file was mainly from https://www.geeksforgeeks.org/inversion-count-in-array-using-merge-sort/
+inversion_count.py: inversion count, combined with merge sort was used to check whether a puzzle is solvable or not.
 
 I slightly modified it in my puzzle_solver.py to suit my code for the game. To be specific, the tiles'order of the current puzzle was represented as a list consisting of numbers in string types. This is because when initializing puzzle file, my initialize_file function in game_design.py returns a dictionary containing information about each tile and its path in string types. For example, key: "3" refers the third tile. In a 4 * 4 puzzle, "16" is the blank tile. Therefore, I also remove the largest number to calculate the number of inversions, as the blank tile is not taken into account in the algorithm.
 
@@ -37,10 +36,6 @@ If that bothers you, you can # line 131 "self.checked() in game_design.py and li
 8.algo_test.py (This is a small PyUnit test to test if the given puzzle list is solvable or not)
 9.search_driver.py(This is a driver.py that you can use to print the path for any list if it is solvable. It's independent of the main driver puzzle_game.py. I leave it in the folder in case you want to take a closer look at the performance of a_star_search method defined in puzzle_solver.py)
 10.other starter files
-
-
-----Note:----
-I imported os package in game_design.py to read ".puz" files in the current directory and my program will display file_warning.gif when there are more than 10 puzzles in the current directory.
 
 
 ----Citations----
